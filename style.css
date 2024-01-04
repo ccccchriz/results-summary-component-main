@@ -233,9 +233,10 @@ main {
 .button {
   color: var(--clr-neutral-white);
   background-color: var(--clr-neutral-dark-blue);
-  border-radius: 1rem;
+  border-radius: 500rem;
+  font-size: 1rem;
   border: none;
-  padding: 0.4rem;
+  padding: 0.75rem 0.5rem;
 }
 
 .button:hover {
