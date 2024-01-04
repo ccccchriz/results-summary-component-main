@@ -121,8 +121,8 @@ main {
     var(--gradient-circle-one),
     var(--gradient-circle-two)
   );
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   display: grid;
   place-content: center;
   border-radius: 50%;
@@ -169,6 +169,11 @@ main {
   background-color: rgb(214, 214, 214);
   padding: 0.5rem 1rem;
   font-size: 20px;
+  border-radius: 0.675rem;
+}
+
+.score--dark {
+  color: var(--clr-neutral-dark-blue);
 }
 
 .score > span:nth-child(1) {
