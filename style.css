@@ -116,7 +116,7 @@ main {
   align-items: center;
 }
 
-.circle {
+.results__circle {
   background-image: linear-gradient(
     var(--gradient-circle-one),
     var(--gradient-circle-two)
@@ -127,24 +127,26 @@ main {
   place-content: center;
   border-radius: 50%;
   margin: 0.8rem;
+  text-align: center;
 }
 
-.circle__text_one {
-  font-size: 2.4rem;
+.results__circle > strong {
   color: var(--clr-neutral-white);
-  font-weight: var(--fw-extra-bold);
+  font-size: 2.5rem;
 }
 
-.circle__text_two {
-  font-size: 0.9rem;
-}
-
-.text {
+.results__info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   text-align: center;
+}
+
+.info__title {
+  font-size: 1.5rem;
+  color: var(--clr-neutral-white);
+  font-weight: var(--fw-bold);
 }
 
 .summary {
