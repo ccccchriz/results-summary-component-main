@@ -20,7 +20,7 @@
   --gradient-circle-one: hsla(256, 72%, 46%, 1);
   --gradient-circle-two: hsla(241, 72%, 46%, 0);
 
-  --ff-base: "HankenGrotesk";
+  --ff-base: "Hanken Grotesk", sans-serif;
 
   --fw-regular: 500;
   --fw-bold: 700;
@@ -28,8 +28,24 @@
 }
 
 @font-face {
-  font-family: "HankenGrotesk";
-  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  font-family: "Hanken Grotesk";
+  src: url("assets/fonts/static/HankenGrotesk-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("assets/fonts/static/HankenGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("assets/fonts/static/HankenGrotesk-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*
