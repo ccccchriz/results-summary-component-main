@@ -184,16 +184,20 @@ main {
   gap: 0.3rem;
 }
 
+.summary__score > span:nth-child(1)::before {
+  content: "";
+  background-size: 1.25rem 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .summary__score--reaction {
   background-color: var(--clr-background-red);
   color: var(--clr-primary-red);
 }
 
 .summary__score--reaction > span:nth-child(1)::before {
-  content: "";
   background-image: url("assets/images/icon-reaction.svg");
-  width: 20px;
-  height: 20px;
 }
 
 .summary__score--memory {
@@ -202,10 +206,7 @@ main {
 }
 
 .summary__score--memory > span:nth-child(1)::before {
-  content: "";
   background-image: url("assets/images/icon-memory.svg");
-  width: 20px;
-  height: 20px;
 }
 
 .summary__score--verbal {
@@ -214,10 +215,7 @@ main {
 }
 
 .summary__score--verbal > span:nth-child(1)::before {
-  content: "";
   background-image: url("assets/images/icon-verbal.svg");
-  width: 20px;
-  height: 20px;
 }
 
 .summary__score--visual {
@@ -226,10 +224,7 @@ main {
 }
 
 .summary__score--visual > span:nth-child(1)::before {
-  content: "";
   background-image: url("assets/images/icon-visual.svg");
-  width: 20px;
-  height: 20px;
 }
 
 .summary__button {
@@ -241,7 +236,7 @@ main {
   padding: 0.75rem 0.5rem;
 }
 
-.button:hover {
+.summary__button:is(:hover, :focus-visible) {
   background-image: linear-gradient(
     var(--gradient-background-one),
     var(--gradient-background-two)
