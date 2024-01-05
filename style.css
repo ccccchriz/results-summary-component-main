@@ -189,7 +189,7 @@ main {
   color: var(--clr-primary-red);
 }
 
-.summary__score--eaction > span:nth-child(1)::before {
+.summary__score--reaction > span:nth-child(1)::before {
   content: "";
   background-image: url("assets/images/icon-reaction.svg");
   width: 20px;
